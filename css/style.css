@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --planta: #A4CCB7;
+    --veneno: #CA7FDE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "Roboto", sans-serif;
+}
+
+.planta {
+    background: var(--planta);
+    color: #000;
+}
+
+.veneno {
+    background: var(--veneno);
+    color: #fff;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background: #fa12fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    text-align: center;
+    height: 90%;
+}
+
+.menu li {
+    display: inline-block;
+    height: 100%;
+    padding-top: 25px;
+    width: 150px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Aplica quando o mouse passa pelo item. */
+.menu li:hover a,
+.menu li a:hover,
+.menu li:hover {
+    background: #fff;
+    color: #fa12fa;
+}
+
+.menu li:hover {
+    border-radius: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20%;
+    height: 100%;
+    width: 100%;
+}
+
+.centralizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 10px;
+    border: 0.5px solid #ccc;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card.img {}
+
+.badge {
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.badge + .badge{
+    margin-left: 10px;
+}
